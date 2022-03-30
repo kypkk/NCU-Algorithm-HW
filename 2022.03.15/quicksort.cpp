@@ -54,12 +54,12 @@ int main(){
     
     while(cin >> element){
         arr[i] = element;
-        if(getchar() == '\n') break;
         i++;
+        if(getchar() == '\n') break;
     }
-    size = i + 1;
+    size = i;
     printArray(arr, size);
-    quickSort(arr, 0, i);
+    quickSort(arr, 0, i-1);
 
     return 0;
     
